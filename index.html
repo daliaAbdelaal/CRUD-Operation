@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <title>CRUD System JS</title>
+</head>
+<body>
+        <div class="w-75 m-auto py-5 ">
+                <h1 class=" text-center pb-5 text-info">CRUD System</h1>
+                <div class="form-group">
+                        <label for="name">productName:</label>
+                        <input type="text" name="product-name" id="name" class="form-control sameInput ">
+                        <div id="nameAlert"class="alert alert-danger my-2 d-none">
+                                productName must have at least 2 character and maximum 20 characters
+                        </div>
+                </div>
+                <div class="form-group">
+                        <label for="category">productCategory:</label>
+                        <input type="text" name="product-category" id="category" class="form-control sameInput" >
+                        <div id="catAlert"class="alert alert-danger my-2 d-none">
+                                productCategory must have at least 2 character and maximum 20 characters
+                        </div>
+                </div>
+                <div class="form-group">
+                        <label for="price">productPrice:</label>
+                        <input type="number" name="product-price" id="price" class="form-control sameInput">
+                        <div id="priceAlert"class="alert alert-danger my-2 d-none">
+                                productPrice must have at least 1 number and maximum 5 digit,can't start with zero
+                        </div>                
+                </div>
+                <div class="form-group">
+                        <label for="description">productDescription:</label>
+                        <textarea  name="product-description" id="description" class="form-control sameInput"></textarea>
+                        <div id="descAlert"class="alert alert-danger my-2 d-none">
+                                productDescription can include number,character,space,dot from 3 digit to 100 digit 
+                        </div>                
+                </div>
+                <button class="btn btn-info" id="btn">Add Product</button>
+                   
+        </div>
+        <div class="w-75 m-auto">
+                <input type="search" name="search" class="form-control my-5" id="searchInput" placeholder="search ...">
+                <!-- <div id="searchAlert"class="alert alert-danger my-2 d-none">write from char number 1 to char number 20 small or capital</div> -->
+
+        </div>
+        
+       
+        <div class="w-75 m-auto py-3">
+                <table class="table">
+                        <thead>
+                                <th>ID</th>
+                                <th>productName</th>
+                                <th>productCategory</th>
+                                <th>productPrice</th>
+                                <th>productDescription</th>
+                                <th>Update</th>
+                                <th>Delete</th>
+                        </thead>
+                        <tbody id="tableBody" >
+                               
+                        </tbody>
+                </table>
+        </div>
+
+        <!-- <input type="text" name="" id="myInput">
+        <div id="myDiv"></div>
+        <select name="" id="boxSelect" >
+                <option value="8">dollar</option>
+                <option value="2">riyal</option>
+                <option value="4">yin</option>
+        </select>
+        <button id="btn2">change</button> -->
+        
+     
+        <script src="main.js"></script>
+</body>
+</html>
